@@ -1,12 +1,13 @@
 
-## shedlock (一种定时任务锁)
-本工程主要是对 **shedlock(4.47.0)** 的二开，源头是这里 [https://github.com/lukas-krecan/ShedLock](https://github.com/lukas-krecan/ShedLock)
+## shedlock (分布式任务锁)
 
-这里十分感谢 [ukas-krecan](https://github.com/lukas-krecan) 等大佬的倾情开源，没有他们也就没有此项目的存在🌹
+ 本工程主要是对 **shedlock(4.47.0)** 的二开，源头是: [https://github.com/lukas-krecan/ShedLock](https://github.com/lukas-krecan/ShedLock)
 
-  此工程是在原版的shedlock(4.47.0)上做的修改，实现了分布式锁：主要增加了对任务锁及任务实例的控制，同时扩充了部分字段便于从后台控制任务的执行以及暂停
+&nbsp;&nbsp;这里再次感谢 [ukas-krecan](https://github.com/lukas-krecan) 等大佬的倾情开源，没有他们也就没有此项目的存在🌹
+
+&nbsp;&nbsp;此工程是在原版的shedlock(4.47.0)上做的修改，实现了分布式锁：主要增加了对任务锁及任务实例的控制，同时扩充了部分字段便于从后台控制任务的执行以及暂停
   
-  另外，本`shedlock`仅仅对 `Oracle`、`Mysql`、`PostgreSQL` 这三个数据库的厂商做了兼容开发，其他由于时间及工具限制暂未开发～ 
+&nbsp;&nbsp;另外，本`shedlock`仅仅对 `Oracle`、`Mysql`、`PostgreSQL` 这三个数据库的厂商做了兼容开发，其他由于时间及工具限制暂未开发～ 
 
 ### 使用说明
 #### 1、根据项目锁使用的数据库导入对应的SQL脚本
@@ -86,5 +87,5 @@ public class ShedlockConfiguration {
 
 + 2、如需要配置到后台以控制任务启停，请 使用`SYS_SHEDLOCK_JOB::state` (仅0或1)字段进行控制任务启停，使用 `SYS_SHEDLOCK_APP::state` (仅0或1)字段进行控制实例启停，实例关闭后，实例下所有任务不可执行
 
-+ 3、如需直接使用构建包，请至 [Releases](https://github.com/funnyzpc/shedlock/releases/new) 中下载，请广泛测试后再应用与生产
++ 3、如需直接使用构建包，请至 [Releases](https://github.com/funnyzpc/shedlock/releases) 中下载，请广泛测试后再应用于生产
 
