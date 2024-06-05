@@ -1,4 +1,0 @@
-net\javacrumbs\shedlock\provider\consul\ConsulSimpleLock.class
-net\javacrumbs\shedlock\provider\consul\ConsulLockProvider.class
-net\javacrumbs\shedlock\provider\consul\ConsulLockProvider$Configuration$Builder.class
-net\javacrumbs\shedlock\provider\consul\ConsulLockProvider$Configuration.class

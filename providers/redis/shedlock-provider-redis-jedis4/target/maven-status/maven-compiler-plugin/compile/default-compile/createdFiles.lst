@@ -1,6 +1,0 @@
-net\javacrumbs\shedlock\provider\redis\jedis4\JedisLockProvider$1.class
-net\javacrumbs\shedlock\provider\redis\jedis4\JedisLockProvider$JedisPoolTemplate.class
-net\javacrumbs\shedlock\provider\redis\jedis4\JedisLockProvider$RedisLock.class
-net\javacrumbs\shedlock\provider\redis\jedis4\JedisLockProvider$JedisCommandsTemplate.class
-net\javacrumbs\shedlock\provider\redis\jedis4\JedisLockProvider.class
-net\javacrumbs\shedlock\provider\redis\jedis4\JedisLockProvider$JedisTemplate.class

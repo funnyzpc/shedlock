@@ -1,6 +1,0 @@
-net\javacrumbs\shedlock\provider\cassandra\CassandraLockProvider$Configuration.class
-net\javacrumbs\shedlock\provider\cassandra\CassandraLockProvider$Configuration$Builder.class
-net\javacrumbs\shedlock\provider\cassandra\CassandraLockProvider$ColumnNames.class
-net\javacrumbs\shedlock\provider\cassandra\Lock.class
-net\javacrumbs\shedlock\provider\cassandra\CassandraStorageAccessor.class
-net\javacrumbs\shedlock\provider\cassandra\CassandraLockProvider.class

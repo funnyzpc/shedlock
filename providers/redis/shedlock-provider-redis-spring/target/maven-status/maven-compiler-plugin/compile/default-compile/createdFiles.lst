@@ -1,8 +1,0 @@
-net\javacrumbs\shedlock\provider\redis\spring\RedisLockProvider$RedisLock.class
-net\javacrumbs\shedlock\provider\redis\spring\ReactiveRedisLockProvider$Builder.class
-net\javacrumbs\shedlock\provider\redis\spring\ReactiveRedisLockProvider$1.class
-net\javacrumbs\shedlock\provider\redis\spring\RedisLockProvider$1.class
-net\javacrumbs\shedlock\provider\redis\spring\ReactiveRedisLockProvider$ReactiveRedisLock.class
-net\javacrumbs\shedlock\provider\redis\spring\RedisLockProvider.class
-net\javacrumbs\shedlock\provider\redis\spring\ReactiveRedisLockProvider.class
-net\javacrumbs\shedlock\provider\redis\spring\RedisLockProvider$Builder.class

@@ -1,7 +1,0 @@
-META-INF\services\io.micronaut.inject.BeanDefinitionReference
-net\javacrumbs\shedlock\micronaut\internal\$SchedulerLockInterceptorDefinition.class
-net\javacrumbs\shedlock\micronaut\internal\SchedulerLockInterceptor.class
-net\javacrumbs\shedlock\micronaut\internal\LockingNotSupportedException.class
-net\javacrumbs\shedlock\micronaut\internal\MicronautLockConfigurationExtractor.class
-net\javacrumbs\shedlock\micronaut\internal\$SchedulerLockInterceptorDefinitionClass.class
-net\javacrumbs\shedlock\micronaut\SchedulerLock.class
