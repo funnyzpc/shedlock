@@ -1,0 +1,8 @@
+net\javacrumbs\shedlock\provider\r2dbc\AbstractR2dbcStorageAccessor.class
+net\javacrumbs\shedlock\provider\r2dbc\R2dbcAdapter$ValueBinder.class
+net\javacrumbs\shedlock\provider\r2dbc\R2dbcLockProvider.class
+net\javacrumbs\shedlock\provider\r2dbc\R2dbcAdapter$1.class
+net\javacrumbs\shedlock\provider\r2dbc\R2dbcAdapter.class
+net\javacrumbs\shedlock\provider\r2dbc\R2dbcAdapter$ParameterResolver.class
+net\javacrumbs\shedlock\provider\r2dbc\R2dbcAdapter$DefaultR2dbcAdapter.class
+net\javacrumbs\shedlock\provider\r2dbc\R2dbcStorageAccessor.class

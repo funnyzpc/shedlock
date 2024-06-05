@@ -1,0 +1,4 @@
+net\javacrumbs\shedlock\provider\dynamodb2\DynamoDBLockProvider$DynamoDBLock.class
+net\javacrumbs\shedlock\provider\dynamodb2\DynamoDBLockProvider.class
+net\javacrumbs\shedlock\provider\dynamodb2\DynamoDBLockProvider$1.class
+net\javacrumbs\shedlock\provider\dynamodb2\DynamoDBUtils.class

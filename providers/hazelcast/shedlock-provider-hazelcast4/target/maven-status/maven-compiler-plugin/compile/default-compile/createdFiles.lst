@@ -1,0 +1,3 @@
+net\javacrumbs\shedlock\provider\hazelcast4\HazelcastLockProvider.class
+net\javacrumbs\shedlock\provider\hazelcast4\HazelcastLock.class
+net\javacrumbs\shedlock\provider\hazelcast4\HazelcastSimpleLock.class

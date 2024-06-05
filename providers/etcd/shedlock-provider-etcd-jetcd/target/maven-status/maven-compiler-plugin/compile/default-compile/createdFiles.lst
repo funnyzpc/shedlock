@@ -1,0 +1,4 @@
+net\javacrumbs\shedlock\provider\etcd\jetcd\EtcdLockProvider$1.class
+net\javacrumbs\shedlock\provider\etcd\jetcd\EtcdLockProvider$EtcdLock.class
+net\javacrumbs\shedlock\provider\etcd\jetcd\EtcdLockProvider$EtcdTemplate.class
+net\javacrumbs\shedlock\provider\etcd\jetcd\EtcdLockProvider.class

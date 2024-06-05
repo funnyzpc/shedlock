@@ -1,0 +1,2 @@
+net\javacrumbs\shedlock\provider\jdbc\micronaut\MicronautJdbcStorageAccessor.class
+net\javacrumbs\shedlock\provider\jdbc\micronaut\MicronautJdbcLockProvider.class
