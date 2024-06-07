@@ -41,16 +41,4 @@ COMMENT ON COLUMN SYS_SHEDLOCK_JOB.LABEL IS '任務標識';
 COMMENT ON COLUMN SYS_SHEDLOCK_JOB.UPDATE_TIME IS '最后更新时间(也即最近一次执行时间/获取锁时间)';
 COMMENT ON TABLE  SYS_SHEDLOCK_JOB IS '集群分佈式鎖-任务配置';
 
-/*
-INSERT INTO mee_quartz.sys_shedlock_application (application,host_ip,host_name,state,create_time) VALUES
-	 ('MEE_QUARTZ','10.156.122.215','SCD202212140004','1','2024-05-28 11:22:33.824'),
-	 ('mee_admin','10.156.122.215','SCD202212140004','1','2024-05-28 11:22:33.824');
-
-INSERT INTO sys_shedlock_job (application,"name",host_ip,locked_at,lock_until,locked_by,"label",state) VALUES
-	 ('MEE_QUARTZ','testTask1','10.156.122.215','2024-05-28 13:18:27.823','2024-05-28 13:28:27.823','SCD202212140004',NULL,'1'),
-	 ('MEE_QUARTZ','testTask2','10.156.122.215','2024-05-28 02:59:59.984','2024-05-28 03:04:59.984','SCD202212140004',NULL,'1'),
-	 ('MEE_QUARTZ','testTask3','10.156.122.215','2023-09-15 01:00:00.045','2099-05-22 09:02:28.498','SCD202212140004','测试003','0');
-
-
-*/
 

@@ -25,11 +25,4 @@ CREATE TABLE SYS_SHEDLOCK_JOB (
   PRIMARY KEY (APPLICATION, NAME)
 ) ENGINE=INNODB DEFAULT CHARSET=UTF8MB4 COMMENT='集群分佈式鎖-任务配置';
 
-/*
-update sys_shedlock_job set host_ip='10.156.122.215',locked_at =now(),lock_until = now()+ interval 10 minute,locked_by ='SCD202212140004'
-where application ='MEE_QUARTZ' and name='testTask1' and state ='1'
-and '1' = ( select state from SYS_SHEDLOCK_APP where application ='MEE_QUARTZ' and host_ip ='10.156.122.215'  )
-*/
-
-
 

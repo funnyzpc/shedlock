@@ -42,10 +42,3 @@ COMMENT ON COLUMN SYS_SHEDLOCK_JOB.STATE IS '0.close关闭 1.open开启(默认) 
 COMMENT ON COLUMN SYS_SHEDLOCK_JOB.UPDATE_TIME IS '最后更新时间(也即最近一次执行时间/获取锁时间)';
 COMMENT ON TABLE  SYS_SHEDLOCK_JOB IS '集群分佈式鎖-任务配置';
 
-
-/*
-UPDATE SYS_SHEDLOCK_JOB set host_ip='10.156.122.215',locked_at = SYSDATE,lock_until = SYSDATE+ interval '10' minute,locked_by ='SCD202212140004'
-WHERE application ='MEE_QUARTZ' and name='testTask1' and state ='1'
-AND '1' = ( select state from SYS_SHEDLOCK_APP where application ='MEE_QUARTZ' and host_ip ='10.156.122.215'  )
-*/
-

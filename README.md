@@ -7,7 +7,7 @@
 
 &nbsp;&nbsp;此工程是在原版的shedlock(4.47.0)上做的修改，实现了分布式锁：主要增加了对任务锁及任务实例的控制，同时扩充了部分字段便于从后台控制任务的执行以及暂停
   
-&nbsp;&nbsp;另外，本`shedlock`仅仅对 `Oracle`、`Mysql`、`PostgreSQL` 这三个数据库的厂商做了兼容开发，其他由于时间及工具限制暂未开发～ 
+&nbsp;&nbsp;另外，本`shedlock`仅仅对 `Oracle`、`Mysql`、`PostgreSQL` 这三个厂商的数据库做了兼容开发，其他暂不考虑～ 
 
 ### 使用说明
 #### 1、根据项目锁使用的数据库导入对应的SQL脚本
@@ -82,7 +82,7 @@ public class ShedlockConfiguration {
 ```
  
 #### 3、使用说明
-+ 1、目前仅对 MySQL、PostgreSQL、Oracle 做支持（当前版本已测试通过），其他数据库需自行开发，同时本工程主要对 `PostgreSQL` 做一等支持，所以`PostgreSQL`的问题会做优先处理
++ 1、目前仅对 `MySQL`、`PostgreSQL`、`Oracle` 做支持（当前版本已测试通过），其他数据库需自行开发，目前对 `PostgreSQL` 做一等支持，所以`PostgreSQL`的问题会做优先处理
 其他bug请提issue🌹
 
 + 2、如需要配置到后台以控制任务启停，请 使用`SYS_SHEDLOCK_JOB::state` (仅0或1)字段进行控制任务启停，使用 `SYS_SHEDLOCK_APP::state` (仅0或1)字段进行控制实例启停，实例关闭后，实例下所有任务不可执行

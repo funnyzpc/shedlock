@@ -34,8 +34,8 @@ class MySqlServerTimeStatementsSource extends SqlStatementsSource {
 //    @Override
 //    String getInsertStatement() {
 //        // insert INTO SYS_SHEDLOCK_JOB(application, name, host_ip, lock_until, locked_at, locked_by, state, update_time)
-//        // select 'shedlock-springboot-test', '10.156.122.215', 'SCD202212140004', '1', CURRENT_TIMESTAMP from dual
-//        // where ( select 1 from sys_shedlock_app where application='shedlock-springboot-test' and host_ip='10.156.122.215' and state='0' ) is not null
+//        // select 'shedlock-springboot-test', '127.0.0.1', 'MEE23120004', '1', CURRENT_TIMESTAMP from dual
+//        // where ( select 1 from sys_shedlock_app where application='shedlock-springboot-test' and host_ip='127.0.0.1' and state='0' ) is not null
 //        // ON DUPLICATE KEY update host_name=values(host_name), update_time = values(update_time)
 //        return "INSERT INTO " + tableName() + "(" +application()+", "+ name() + ", " +hostIP()+", "+ lockUntil() + ", " + lockedAt() + ", " + lockedBy() +", "+state()+", "+updateTime()+ ") " +
 //            " select :application, :name, :hostIP, " + lockAtMostFor + ", " + now + ", :lockedBy, :state, CURRENT_TIMESTAMP FROM DUAL  "+
@@ -56,7 +56,7 @@ class MySqlServerTimeStatementsSource extends SqlStatementsSource {
     @Override
     String getAppInsertStatement() {
         // INSERT INTO SYS_SHEDLOCK_APP(application, host_ip, host_name, state, update_time)
-        // VALUES('shedlock-springboot-test', '10.156.122.215', 'SCD202212140004', '1', CURRENT_TIMESTAMP)
+        // VALUES('shedlock-springboot-test', '127.0.0.1', 'MEE23120004', '1', CURRENT_TIMESTAMP)
         // ON DUPLICATE KEY update host_name=values(host_name), update_time = values(update_time)
         return "INSERT INTO " + tableAppName() + "(" +application()+ ", "+ hostIP() + ", " +hostName()+", "+ state() + ", " + appUpdateTime() + ") VALUES(:application, :hostIP, :hostName, :state, CURRENT_TIMESTAMP)" +
             " ON DUPLICATE KEY UPDATE  " + hostName()+" = VALUES("+hostName()+") , "+appUpdateTime() + " = VALUES("+appUpdateTime()+") ";
